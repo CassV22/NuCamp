@@ -1,3 +1,4 @@
+//carousel functionality (timing, pause/play)
 $(function() {
     $(".carousel").carousel({ interval: 2000, pause: false });
     $("#carouselButton").click(function() {
@@ -10,5 +11,19 @@ $(function() {
             $("#carouselButton").children("i").removeClass("fa-play");
             $("#carouselButton").children("i").addClass("fa-pause");
         }
+    });
+});
+
+//opens reserve campsite modal
+$(function() {
+    $("#reserveButton").click(function() {
+        $("#reserveModal").modal('show');
+    });
+});
+
+//opens login modal
+$(function() {
+    $("#loginButton").click(function() {
+        $("#loginModal").modal('show');
     });
 });
