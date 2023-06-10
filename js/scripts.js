@@ -16,14 +16,14 @@ $(function() {
 
 //opens reserve campsite modal
 $(function() {
-    $("#reserveButton").click(function() {
+    $("#reserveButton").on("click", function() {
         $("#reserveModal").modal('show');
     });
 });
 
 //opens login modal
 $(function() {
-    $("#loginButton").click(function() {
+    $("#loginButton").on("click", function() {
         $("#loginModal").modal('show');
     });
 });
