@@ -12,18 +12,15 @@ $(function() {
             $("#carouselButton").children("i").addClass("fa-pause");
         }
     });
-});
 
-//opens reserve campsite modal
-$(function() {
+    //opens reserve campsite modal
     $("#reserveButton").on("click", function() {
         $("#reserveModal").modal('show');
     });
-});
 
-//opens login modal
-$(function() {
+    //opens login modal
     $("#loginButton").on("click", function() {
         $("#loginModal").modal('show');
     });
 });
+
